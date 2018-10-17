@@ -87,8 +87,11 @@ import (
 )
 
 const (
+	// Unum64Size has the size of the unum 64 type
 	Unum64Size = 8
+	// Unum32Size has the size of the unum 32 type
 	Unum32Size = 4
+	// Unum16Size has the size of the unum 16 type
 	Unum16Size = 2
 )
 
