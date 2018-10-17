@@ -1,5 +1,3 @@
-// friend!
-
 // The MIT License (MIT)
 //
 // Copyright (c) 2016 Joubin Muhammad Houshyar
@@ -27,7 +25,8 @@ import (
 	"math/rand"
 	"testing"
 	"testing/quick"
-	"unum"
+
+	"github.com/rafaelescrich/unum"
 )
 
 func BenchmarkEncodeUnum32(b *testing.B) {
@@ -80,7 +79,7 @@ func TestCodecUnum32(t *testing.T) {
 			}
 			return true
 		} else if errorExpected {
-			t.Errorf("expected error encoding - v:%d\n", v, e.Error())
+			t.Errorf("expected error encoding - v:%d\n", v)
 		}
 
 		// check encoding size

@@ -27,7 +27,8 @@ import (
 	"encoding/binary"
 	"math/rand"
 	"testing"
-	"unum"
+
+	"github.com/rafaelescrich/unum"
 )
 
 func BenchmarkStdlibEncodingPutUvarint16(b *testing.B) {
